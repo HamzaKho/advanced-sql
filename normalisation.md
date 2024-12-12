@@ -208,6 +208,40 @@ Now, it's your turn to practice normalisation. Here is a denormalized dataset fo
 ---
 
 ### Add your Normalised Tables here
+##### Customers:
+
+| CustomerID | CustomerName | CustomerEmail       | 
+|------------|--------------|---------------------|
+| 1          | Dave         | <dave@example.com>  |
+| 2          | Eve          | <eve@example.com>   |
+| 3          | Frank        | <frank@example.com> |
+
+##### Products:
+
+| ProductID  | ProductName  | UnitPrice  | 
+|------------|--------------|------------|
+| 1          | Gadget X     | 50.00      |
+| 2          | Gadget Y     | 75.00      |
+| 3          | Gadget Z     | 100.00     |
+
+##### Orders:
+
+| InvoiceID  | CustomerID  | InvoiceDate | 
+|------------|-------------|-------------|
+| 101        | 1           | 2023-02-01  |
+| 102        | 2           | 2023-02-02  |
+| 103        | 1           | 2023-02-03  |
+| 104        | 3           | 2023-02-04  |
+
+##### OrderDetails:
+
+| InvoiceID  | ProductID   | Quantity | 
+|------------|-------------|----------|
+| 101        | 1           | 1        |
+| 102        | 2           | 2        |
+| 103        | 3           | 1        |
+| 104        | 1           | 3        |
+
 
 ---
 
